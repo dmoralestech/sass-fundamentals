@@ -25,6 +25,10 @@
     //...
   }
 
+  .btn:disabled { // using a pseudo selector ":" based on the behaviour of the element.
+    opacity: 0.5;
+  }
+
   .sidebar, .main {
     padding: 10px;
   }
