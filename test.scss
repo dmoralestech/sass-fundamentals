@@ -1,8 +1,6 @@
 //sudo gem install sass
 // sass --watch test.scss
 
-
-
 .container {
 
   max-width: 1000px;
@@ -10,13 +8,30 @@
   margin: auto;
   background: #eeeeee;
 
+  // if you have many descendants of the same class, it would still apply
+
+  // if you only want a direct descendant, you should use ">"
+  > .left-area { // this only applies the the class left-area under container
+    //...
+  }
+
+  // parent-selector ""&"
+  // &.right-nav is equal to .container.right-nav
+  &.right-nav {
+    //...
+  }
+
+  .right-nav & { // is equal to .right-nav .container ... good for themes
+    //...
+  }
+
   .sidebar, .main {
     padding: 10px;
   }
 
   .main {
     margin-left: 320px;
-    min-height:200vh;
+    min-height: 200vh;
     border-left: 2px solid #333;
     /*border-right:10px solid blue;*/
     background-color: blanchedalmond;
