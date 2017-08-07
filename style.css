@@ -1,21 +1,29 @@
 .container {
-    max-width: 600px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
-    background: #eee;
+    /*margin-right: 200px;*/
+    /*margin-left: 200px;*/
+    background: #eeeeee;
 }
 
 .container .sidebar, .container .main {
     padding: 10px;
-}
 
-.container .main {
-    margin-left: 220px;
-    min-height:200vh;
-    border-left: 2px solid #333;
 }
 
 .container .sidebar {
-    width: 200px;
+    width: 300px;
     float: left;
+    background-color: palevioletred;
 }
+
+.container .main {
+    margin-left: 320px;
+    min-height:200vh;
+    border-left: 2px solid #333;
+    /*border-right:10px solid blue;*/
+    background-color: blanchedalmond;
+}
+
+
