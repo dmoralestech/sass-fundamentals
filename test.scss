@@ -1,0 +1,25 @@
+.container {
+
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  background: #eeeeee;
+
+  .sidebar, .main {
+    padding: 10px;
+  }
+
+  .main {
+    margin-left: 320px;
+    min-height:200vh;
+    border-left: 2px solid #333;
+    /*border-right:10px solid blue;*/
+    background-color: blanchedalmond;
+  }
+
+  .sidebar {
+    width: 300px;
+    float: left;
+    background-color: palevioletred;
+  }
+}
